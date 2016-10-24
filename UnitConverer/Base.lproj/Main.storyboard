@@ -15,48 +15,39 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input US dollar amount" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xzq-1v-RfK">
-                                <frame key="frameInset" minX="93" minY="217" width="189" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input US dollar amount" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xzq-1v-RfK">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="106" id="A2e-It-ZGU"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="224" id="vEN-NG-xhV"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KoG-DS-W0e">
-                                <frame key="frameInset" minX="160" minY="318" width="55" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KoG-DS-W0e">
                                 <state key="normal" title="Convert"/>
                                 <connections>
                                     <action selector="ConvertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4M2-Cs-isX"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="To EUR To GBP To  JPY" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWo-qt-der">
-                                <frame key="frameInset" minX="102" minY="407" width="85" height="61"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Owv-xa-ey5">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Owv-xa-ey5">
-                                <frame key="frameInset" minX="195" minY="407" width="35" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRM-lx-HLq">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRM-lx-HLq">
-                                <frame key="frameInset" minX="195" minY="427" width="35" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9DT-Ak-chp">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9DT-Ak-chp">
-                                <frame key="frameInset" minX="195" minY="448" width="35" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To EUR To GBP To  JPY" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWo-qt-der">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -64,15 +55,25 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Owv-xa-ey5" firstAttribute="leading" secondItem="IWo-qt-der" secondAttribute="trailing" constant="8" id="2Kc-rf-6NC"/>
+                            <constraint firstItem="xzq-1v-RfK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="197" id="30F-6d-EOH"/>
+                            <constraint firstItem="xzq-1v-RfK" firstAttribute="leading" secondItem="IWo-qt-der" secondAttribute="trailing" constant="-110" id="5zF-w4-wzV"/>
                             <constraint firstItem="xzq-1v-RfK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Blk-hZ-ELv"/>
+                            <constraint firstItem="JRM-lx-HLq" firstAttribute="leading" secondItem="IWo-qt-der" secondAttribute="trailing" constant="8" id="I4M-AW-lE1"/>
                             <constraint firstItem="KoG-DS-W0e" firstAttribute="top" secondItem="xzq-1v-RfK" secondAttribute="bottom" constant="67" id="JWv-MQ-xlh"/>
-                            <constraint firstItem="xzq-1v-RfK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-67.5" id="XpR-Ak-XxE"/>
-                            <constraint firstItem="IWo-qt-der" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-60" id="dPP-Xd-DbS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9DT-Ak-chp" secondAttribute="bottom" constant="198" id="RLv-z3-g8K"/>
+                            <constraint firstItem="9DT-Ak-chp" firstAttribute="leading" secondItem="IWo-qt-der" secondAttribute="trailing" constant="8" id="Zqi-6n-E9W"/>
+                            <constraint firstItem="JRM-lx-HLq" firstAttribute="top" secondItem="Owv-xa-ey5" secondAttribute="bottom" constant="-1" id="aaK-f7-kV2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IWo-qt-der" secondAttribute="bottom" constant="199" id="ibp-z3-GIf"/>
                             <constraint firstItem="KoG-DS-W0e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t6u-N1-fNN"/>
-                            <constraint firstItem="IWo-qt-der" firstAttribute="top" secondItem="KoG-DS-W0e" secondAttribute="bottom" constant="31" id="vgq-ce-azD"/>
+                            <constraint firstItem="9DT-Ak-chp" firstAttribute="top" secondItem="JRM-lx-HLq" secondAttribute="bottom" id="tRu-uK-q7a"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ButtonTapped" destination="KoG-DS-W0e" id="suC-dC-vBq"/>
+                        <outlet property="CurrencyA" destination="Owv-xa-ey5" id="i2g-w9-Uce"/>
+                        <outlet property="CurrencyB" destination="JRM-lx-HLq" id="dBd-L3-1Go"/>
+                        <outlet property="CurrencyC" destination="9DT-Ak-chp" id="7xY-eT-mpU"/>
                         <outlet property="InputField" destination="xzq-1v-RfK" id="Ik8-6v-zIs"/>
                         <outlet property="OutputField" destination="IWo-qt-der" id="F3z-Jx-SQk"/>
                     </connections>

@@ -9,18 +9,26 @@
 #import "ViewController.h"
 
 
-@interface ViewController ()
+
+@interface ViewController () 
 
 @property (weak, nonatomic) IBOutlet UITextField *InputField;
 
+@property (weak, nonatomic) IBOutlet UIButton *ButtonTapped;
+
 @property (weak, nonatomic) IBOutlet UILabel *OutputField;
+@property (weak, nonatomic) IBOutlet UILabel *CurrencyA;
+@property (weak, nonatomic) IBOutlet UILabel *CurrencyB;
+@property (weak, nonatomic) IBOutlet UILabel *CurrencyC;
+
 
 @end
 
 @implementation ViewController
 
 - (IBAction)ConvertButton:(id)sender {
- 
+    self.ButtonTapped.enabled = NO;
+    self.CurrencyA.text = @"A";
 }
 
 
